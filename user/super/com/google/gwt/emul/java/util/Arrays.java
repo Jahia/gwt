@@ -67,12 +67,9 @@ public class Arrays {
       return array.length;
     }
 
-    /*
-     * Semantics are to return an array of identical type.
-     */
     @Override
     public Object[] toArray() {
-      return Array.clone(array);
+      return toArray(new Object[array.length]);
     }
 
     /*
